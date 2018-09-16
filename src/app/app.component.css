@@ -8,7 +8,7 @@ div#box2 {
     background: orangered;
     width: 400px;
     height: 200px;
-    /* So that content is now shown when the slide is closed! */
+    /* So that content is not visible when the slide is closed! */
     overflow: hidden;
 }
 

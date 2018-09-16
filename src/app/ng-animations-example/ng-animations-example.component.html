@@ -1,0 +1,26 @@
+<h1>with BrowserAnimationsModule</h1>
+<button (click)="onChangeBG(boxes[0])">Change color of Box 1</button>
+<button (click)="onChangeFade(boxes[0])">Box 1: {{boxes[0].fadeInState === 'visible' ? 'fade-out' : 'fade-in'}}</button>
+<button (click)="onSlideOC(boxes[0])">Box 1: {{boxes[0].slideOpenState === 'visible' ? 'slide-close' : 'slide-open'}}</button>
+<button (click)="onSlideIO(boxes[1])">Box2: {{boxes[1].slideInState === 'in' ? 'slide-out' : 'slide-in'}}</button>
+<h2></h2>
+
+<div class="box" id="box1" 
+   [@boxColorChange]="boxes[0].boxColorState" 
+   [@fadeInState]="boxes[0].fadeInState"
+   [@slideOpenState]="boxes[0].slideOpenState"
+   [@slideInState]="boxes[0].slideInState">
+     {{boxes[0].content}}
+</div>
+
+<div class="box" id="box2" 
+   [@slideInState]="boxes[1].slideInState">
+     {{boxes[1].content}}
+</div>
+
+
+   <!-- <div id="box2" [@fadeInState]="boxes[1].fadeInState">{{boxes[1].content}}</div> -->
+
+<!-- <div [@boxColorChange]="box.color" (click)="box.toggleState()" *ngFor="let box of boxes">
+  {{ box.content }}
+</div> -->

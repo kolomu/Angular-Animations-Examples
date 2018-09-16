@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+  <app-ng-animations-example></app-ng-animations-example> 
+  <hr style="clear: both">
+  <h1>Without BrowserAnimationsModule</h1>
   <button (click)="onChangeBG(box1, '#F0F')">Magenta</button>
   <button (click)="onFadeOut(box1)">FadeOut</button>
   <button (click)="onFadeIn(box1)">FadeIn</button>
