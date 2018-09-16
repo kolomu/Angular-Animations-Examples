@@ -1,0 +1,22 @@
+div#box1 {
+    background: #9DCEFF;
+    width: 400px;
+    height: 200px;
+}
+
+div#box2 {
+    background: orangered;
+    width: 400px;
+    height: 200px;
+    /* So that content is now shown when the slide is closed! */
+    overflow: hidden;
+}
+
+div#box3 {
+    background: greenyellow;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    left: -400px;
+}
