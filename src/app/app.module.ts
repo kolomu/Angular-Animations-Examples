@@ -5,11 +5,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgAnimationsExampleComponent } from './ng-animations-example/ng-animations-example.component';
+import { FlipCardExampleComponent } from './flip-card-example/flip-card-example.component';
+import { FlipcardComponent } from './flip-card-example/flipcard/flipcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgAnimationsExampleComponent
+    NgAnimationsExampleComponent,
+    FlipCardExampleComponent,
+    FlipcardComponent
   ],
   imports: [
     BrowserModule,

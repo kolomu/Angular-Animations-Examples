@@ -3,7 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <app-ng-animations-example></app-ng-animations-example> 
+  <h1>Flip Cards</h1>
+  <app-flip-card-example></app-flip-card-example>
+  <hr style="clear: both">
+  <app-ng-animations-example></app-ng-animations-example>
   <hr style="clear: both">
   <h1>Without BrowserAnimationsModule</h1>
   <button (click)="onChangeBG(box1, '#F0F')">Magenta</button>
@@ -23,37 +26,37 @@ export class AppComponent {
 
   onChangeBG(el: HTMLDivElement, color: string) {
     // background color, duration, timingFunction (e.g. ease-in/ease-out/linear), delay
-    el.style.transition = "background 1.0s linear 0s";
+    el.style.transition = 'background 1.0s linear 0s';
     el.style.background = color;
   }
 
   onFadeIn(el: HTMLDivElement) {
-    el.style.transition = "opacity 1.0s linear 0s";
+    el.style.transition = 'opacity 1.0s linear 0s';
     el.style.opacity = '1';
   }
 
   onFadeOut(el: HTMLDivElement) {
-    el.style.transition = "opacity 1.0s linear 0s";
+    el.style.transition = 'opacity 1.0s linear 0s';
     el.style.opacity = '0';
   }
 
   onSlideOpen(el: HTMLDivElement) {
-    el.style.transition = "height 0.5s linear 0s";
-    el.style.height = "200px";
+    el.style.transition = 'height 0.5s linear 0s';
+    el.style.height = '200px';
   }
 
   onSlideClose(el: HTMLDivElement) {
-    el.style.transition = "height 0.5s linear 0s";
-    el.style.height = "0px";
+    el.style.transition = 'height 0.5s linear 0s';
+    el.style.height = '0px';
   }
 
   onSlideIn(el: HTMLDivElement) {
-    el.style.transition = "left 0.5s ease-in 0s";
-    el.style.left = "0px";
+    el.style.transition = 'left 0.5s ease-in 0s';
+    el.style.left = '0px';
   }
 
   onSlideOut(el: HTMLDivElement) {
-    el.style.transition = "left 0.5s ease-out 0s";
-    el.style.left = "-400px";
+    el.style.transition = 'left 0.5s ease-out 0s';
+    el.style.left = '-400px';
   }
 }

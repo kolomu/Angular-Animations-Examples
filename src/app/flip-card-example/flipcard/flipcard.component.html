@@ -1,0 +1,12 @@
+<div class="flip3D" (click)="toggleState()">
+    <div class="back" 
+      [innerHTML]="back" 
+      [@frontState]="!frontState">
+    </div>
+    
+    <div class="front" 
+      [innerHTML]="front" 
+      [@frontState]="frontState">
+    </div>
+
+</div>

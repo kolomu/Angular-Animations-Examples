@@ -64,7 +64,7 @@ export class NgAnimationsExampleComponent {
     this.boxes = [
       new Box('Lorem Ipsum dolor sit amet'),
       new Box('Lorem Ipsum dolor sit amet')
-    ]
+    ];
   }
 
   onChangeBG(box: Box) {
